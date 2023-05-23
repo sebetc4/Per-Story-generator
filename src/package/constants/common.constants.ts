@@ -1,0 +1,1 @@
+export const logIf = (condition: boolean, data: any) => condition && console.log(data)
