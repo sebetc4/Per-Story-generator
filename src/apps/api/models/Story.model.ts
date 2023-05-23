@@ -23,8 +23,5 @@ const schema = new Schema<StorySchema, IStoryModel, StoryMethods>(
     }
 );
 
-schema.pre('remove', function () {
-    console.log('Removing doc!');
-});
 
 export const Story = models.Story || model<StorySchema, IStoryModel>('Story', schema);
